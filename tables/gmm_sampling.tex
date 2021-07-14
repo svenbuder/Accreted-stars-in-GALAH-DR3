@@ -1,0 +1,27 @@
+\begin{table}
+\centering
+\caption{Overview of the combinations used for the Simple Gaussian Mixture Models to estimate the number of components to sample out. The GMM input, consisting of the number of data points with each combination as input array has yielded the lowest BIC score for the number of components lists.}
+\label{tab:sample_gmm}
+\begin{tabular}{cccc}
+\hline \hline
+Set & \multicolumn{2}{c}{Input for simple GMMs (see Sec.~\ref{sec:sample_gmm})} & Comp. \\
+ & Combination & Data Points & Nr. \\
+\hline
+\texttt{Mg\_Mn}   & [Mg/Fe], [Mn/Fe]  & 26810 & 5 \\
+\texttt{MgH\_Mn}  & [Mg/H], [Mn/Fe]   & 26810 & 4 \\
+\texttt{Mg\_Na\_Mn}  & [Mg/Fe], [Na/Fe], [Mn/Fe] & 26057 & 7 \\
+\texttt{MgH\_Na\_Mn} & [Mg/H], [Na/Fe], [Mn/Fe] & 26057 & 8 \\
+\texttt{MgMn\_Na}  & [Mg/Mn], [Na/Fe]  & 26057 & 6 \\
+\texttt{MgCu\_Na}  & [Mg/Cu], [Na/Fe]  & 20974 & 4 \\
+\hline
+\texttt{MgH\_Na}  & [Mg/H], [Na/Fe]   & 26670 & 5 \\
+\texttt{Mg\_Na\_Cu}  & [Mg/Fe], [Na/Fe], [Cu/Fe] & 20974 & 8 \\
+\texttt{Mg\_Na\_Mn\_Cu} & [Mg/Fe], [Na/Fe],   & 20693 & 9 \\
+     & [Mn/Fe], [Cu/Fe]  &   &  \\
+\texttt{all\_6}   & [Mg/Fe], [Si/Fe], [Na/Fe], & 18544 & 7 \\
+     & [Mn/Fe], [Ni/Fe], [Cu/Fe] &   &  \\
+\texttt{all\_6\_rel}  & [Mg/Mn], [Si/Cu],  & 18544 & 5 \\
+     & [Na/Fe], [Ni/Fe]   &   &  \\
+   \hline
+\end{tabular}
+\end{table}
