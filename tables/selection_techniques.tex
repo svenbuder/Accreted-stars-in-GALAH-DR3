@@ -1,7 +1,7 @@
 \begin{table*}    \centering
     \caption{
     \textbf{A compilation of different techniques to identify major accretion structures.}
-    The list includes photometric information used in color-magnitude diagrams (CMD), stellar kinematic properties such as Galactic longitude $l$ and latitude $b$, radial velocity $v_\text{rad}$, tangential velocity ($V_T$), total velocity ($V_\text{tot}$), Galactocentric Cartesian velocities ($V_X$, $V_Y$, and $V_Z$), Galactocentric cylindrical velocities ($V_R$, $V_\phi$, and $V_Z$), stellar dynamic properties such as maximum Galactocentric radius ($R_\text{max}$), actions ($J_R$, $J_\phi = L_Z$, $J_Z$, and total $J_\text{tot}$), eccentricity $e$, orbit energy $E$, as well as stellar chemical information such as the iron abundances relative to hydrogen [Fe/H], and element abundances of element X relative to iron [X/Fe]. $k$-means and Gaussian Mixture Models (GMM) are \texttt{scikit-learn} clustering algorithms \citep{scikit-learn}, whereas \textsc{StarGo} is a neutral-network-based clustering method \citet{Yuan2018}.
+    The list includes photometric information used in colour-magnitude diagrams (CMD), stellar kinematic properties such as Galactic longitude $l$ and latitude $b$, radial velocity $v_\text{rad}$, tangential velocity ($V_T$), total velocity ($V_\text{tot}$), Galactocentric Cartesian velocities ($V_X$, $V_Y$, and $V_Z$), Galactocentric cylindrical velocities ($V_R$, $V_\phi$, and $V_Z$), stellar dynamic properties such as maximum Galactocentric radius ($R_\text{max}$), actions ($J_R$, $J_\phi = L_Z$, $J_Z$, and total $J_\text{tot}$), eccentricity $e$, orbit energy $E$, as well as stellar chemical information such as the iron abundances relative to hydrogen [Fe/H], and element abundances of element X relative to iron [X/Fe]. $k$-means and Gaussian Mixture Models (GMM) are \texttt{scikit-learn} clustering algorithms \citep{scikit-learn}, whereas \textsc{StarGo} is a neutral-network-based clustering method \citet{Yuan2018}.
     We note that the references are not necessarily the first ones finding these properties, but examples of their application. In the case of [Na/Fe] vs. [Ni/Fe] for stars with high $V_\text{tot}$, the correlation has e.g. found by \citet{Nissen1997,Nissen2010} and discussed by \citet{Venn2004} before being applied explicitly by \citet{Bensby2014}.
     }
     \begin{tabular}{c|c|c}
@@ -26,11 +26,11 @@
         & $e$ & \citet{Naidu2020} \\
         & $E$, $L$, $\theta = \arccos{L_Z/L}$, $\phi = \arctan{L_X/L_Y}$ via \textsc{StarGo} & \citet{Yuan2020} \\
         \hline
-        Stellar kinematics and photometry & $V_T$ and sequences in the CMD & \citet{Babusiaux2018} \\
-        & $v_\text{rad}$ and $m_i$ & \citet{Ibata1994} \\
+        Stellar kinematics and photometry & $v_\text{rad}$ and $m_i$ & \citet{Ibata1994} \\
+        & $l$, $b$, $\mu_l$, $\mu_b$, $m_i$ via \textsc{streamfinder} & \citet{Malhan2018} \\
+        & $V_T$ and sequences in the CMD & \citet{Babusiaux2018} \\
         & \dots & \citet{Haywood2018b} \\
         & \dots & \citet{Gallart2019} \\
-        & $l$, $b$, $\mu_l$, $\mu_b$, $m_i$ via \textsc{streamfinder} & \citet{Malhan2018} \\
         \hline
         Stellar chemokinematics & $V_\text{tot}$, [Fe/H], and [Mg/Fe] & \citet{Nissen2010} \\
         & \dots & \citet{Navarro2011} \\
