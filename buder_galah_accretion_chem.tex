@@ -183,7 +183,7 @@ We use kinematic and dynamic properties like orbit actions and eccentricities as
 \begin{equation} \label{eq:msto}
 \text{MSTO stars} = 
 \begin{cases}
-T_\text{eff} \geq 5350\,\mathrm{K} \text{ and} \\
+T_\text{eff} \geq 5350\,\mathrm{K} \text{ and} 
 \log g \geq 3.5\,\mathrm{\log \left(cm\,s^{-2} \right)} 
 \end{cases}
 \end{equation}
@@ -191,10 +191,8 @@ T_\text{eff} \geq 5350\,\mathrm{K} \text{ and} \\
 We apply some basic cuts to each selection that will be used throughout this study. We expect the stars to have passed the spectroscopic quality check \texttt{flag\_sp}, be part of the GALAH main survey or the K2/TESS-HERMES follow-up (to exclude observations of the bulge and open/globular clusters, such as $\omega$\,Cen), be within $D_\varpi < 10 \kpc$ (to exclude LMC and SMC), and have available dynamic/age data and unflagged, that is, reliably measured abundances for each of the particular set of elements X used:\begin{equation} \label{eq:basic_cuts}
 \text{Basic cuts} = 
 \begin{cases}
-\texttt{flag\_sp} = 0 \text{ and} \\
-\texttt{flag\_fe\_h} = 0 \text{ and} \\
-\texttt{survey} \neq \text{``other'' and} \\
-D_\varpi < 10\kpc \text{ and} \\
+\texttt{flag\_sp} = 0, \texttt{flag\_fe\_h} = 0, \\
+\texttt{survey} \neq \text{``other''}, D_\varpi < 10\kpc, \\
 \texttt{L\_Z}\text{, }\texttt{ecc}\text{ \& }\texttt{age\_bstep} \text{ finite and} \\
 \texttt{flag\_X\_fe} = 0 \text{ for each used element X} \\
 \end{cases}
@@ -226,7 +224,7 @@ The studies by \citet{Nissen2010,Nissen2011,Nissen2012} and \citet{Nissen2014} h
 \subsubsection{Separating kinematic low- and high-\texorpdfstring{$\alpha$}{alpha} halo stars}
 
 For the comparison with the literature data of the low-$\alpha$ halo, we perform very similar cuts to the GALAH+ DR3 data as \cite{Nissen2010}. We apply an initial cut in the total velocity of $v_\text{tot} > 180\kms$ with respect to the LSR. We plot the velocity distribution (grey-scaled density) in Fig.~\ref{fig:nissen_selection_corner}a in a classic Toomre diagram of space velocities with respect to the LSR for the GALAH+ DR3 data and with Galactocentric space velocities in Fig.~\ref{fig:nissen_selection_corner}b. We only show data with reliable (unflagged) [Mg/Fe] and [$\alpha$/Fe] (an error-weighted average of Mg, Si, Ca, and Ti lines) in addition to the basic quality cuts of Eq.~\ref{eq:basic_cuts}. In this projection, stars that move similar to the LSR are located close to the origin of coordinates, like the Sun. Almost all stars of GALAH+ DR3 have small total motions compared to the LSR, with only \input{depending_text/percentage_vtot.tex} and \input{depending_text/percentage_vtan.tex} above a total or tangential velocity ($v_\text{tot}$ or $v_T$) above $180\kms$, respectively. These stars, shown in a blue density distribution in Fig.~\ref{fig:nissen_selection_corner}, are typically assigned to the kinematic halo \citep[e.g.][]{Venn2004} and are thought to cover both accreted stars as well as in-situ halo and/or disk stars on dynamically hot and heated orbits.
-In addition to this kinematic cut, we apply a cut in both $\alpha$-enhancement and iron abundance, to get a preliminary selection of the low-$\alpha$ halo as reported by \citet{Nissen2010}. However, we expand the selection by \citet{Nissen2010}, shown as the red dashed lines in Fig.~\ref{fig:nissen_selection_corner}c, which is limited to $-1.6 < \mathrm{[Fe/H]} < -0.4$ down to an iron abundance of $\mathrm{[Fe/H]} \sim -2.0$, to include more stars in our preliminary selection (see the difference between red and orange dashed lines in Fig.~\ref{fig:nissen_selection_corner}c), as the low-$\alpha$ halo stars clearly extend past the original selection by \citet{Nissen2010}. Our precision for kinematic halo stars is on average lower by a factor of 2-3 compared to \citet{Nissen2010}, for example \protect\input{depending_text/median_uncertainties_fehmgfealphafe.tex} compared to 0.03, 0.03, and 0.02 for [Fe/H], [Mg/Fe], and [$\alpha$/Fe]. We thus see a significant contamination of our [Mg/Fe] measurements by the high-$\alpha$ halo, located at \input{depending_text/high_alpha_halo_fehmgfealphafe.tex}. 
+In addition to this kinematic cut, we apply a cut in both $\alpha$-enhancement and iron abundance, to get a preliminary selection of the low-$\alpha$ halo as reported by \citet{Nissen2010}. However, we expand the selection by \citet{Nissen2010}, shown as the red dashed lines in Fig.~\ref{fig:nissen_selection_corner}c, which is limited to $-1.6 < \mathrm{[Fe/H]} < -0.4$ down to an iron abundance of $\mathrm{[Fe/H]} \sim -2.0$, where the onset of SNIa contributions for the GSE was found by \citet{Matsuno2019}. This includes more stars in our preliminary selection (see the difference between red and orange dashed lines in Fig.~\ref{fig:nissen_selection_corner}c), as the low-$\alpha$ halo stars clearly extend past the original selection by \citet{Nissen2010}. We acknowledge that this preliminary selection excludes the most metal-poor stars of the GSE \citep{Cordoni2021}. Our precision for kinematic halo stars is on average lower by a factor of 2-3 compared to \citet{Nissen2010}, for example \protect\input{depending_text/median_uncertainties_fehmgfealphafe.tex} compared to 0.03, 0.03, and 0.02 for [Fe/H], [Mg/Fe], and [$\alpha$/Fe]. We thus see a significant contamination of our [Mg/Fe] measurements by the high-$\alpha$ halo, located at \input{depending_text/high_alpha_halo_fehmgfealphafe.tex}. 
 We therefore apply a second chemical cut, estimated from the data by \citet{Nissen2010}, on the combined [$\alpha$/Fe] (see the orange dashed line in Fig.~\ref{fig:nissen_selection_corner}d). The applied cuts for the preliminary selection of low-$\alpha$ halo stars in GALAH+ DR3 data, leading to a sample of \input{depending_text/nr_preliminary_low_alpha_halo.tex} spectra (\input{depending_text/nr_preliminary_low_alpha_halo_na.tex} of them with unflagged [Na/Fe] measurements), can be summarised as
 \begin{equation} \label{eq:prelim_low_alpha_halo}
 \mathrm{Prel.~low-\alpha~halo} =
@@ -270,7 +268,7 @@ Looking at Li in Fig.~\ref{fig:nafe_xfe_nissen_all}, we do not see a significant
 \paragraph*{$\alpha$-process elements: Mg, Si, S, Ca, Ti:}
 
 For the individual $\alpha$-process elements (Fig.~\ref{fig:nafe_xfe_nissen_all}), but especially for their error-weighted combination (reported as [$\alpha$/Fe] by GALAH+ DR3), we see a significantly smaller scatter than for O, that is \input{depending_text/alpha_scatter.tex}. Each of their distributions is symmetrical and agrees extremely well with the distribution of stars from \citet{Nissen2010} for $\mathrm{[Na/Fe]} < 0$. For [Mg/Fe] we see a moderately negative skewness of $\tilde{\mu}_{l,3} = \input{depending_text/skewness_Mg_lah.tex}$, which is caused by our strict linear cuts on both elements. The distribution for Ti is, contrary to those of other $\alpha$-elements, skewed towards higher values with $\tilde{\mu}_{l,3} = \input{depending_text/skewness_Ti_lah.tex}$, indicating possible issues with high [Ti/Fe] measurements (because Ti is detected in more than \input{depending_text/lah_ti_detection_percentage.tex} of the low-$\alpha$ halo).
-In these panels, which have all measurements for [Mg/Fe], we notice a significant number (\input{depending_text/low_alpha_halo_nafe_0.tex} of stars preliminary selected as part of the low-$\alpha$ halo, but with $\mathrm{[Na/Fe]} > 0$. \citet{Nissen2010} found only 2 of the 38 (5\%) low-$\alpha$ halo stars in their study (G53-41 and G150-40) in this abundance space. Due to our lower precision, our sample also reaches into the super-Solar [Na/Fe] regime. \citet{Nissen2011} suggested that their two Na-enhanced stars could be halo field counterparts of the Na-enhanced globular cluster stars. While we have excluded the dedicated globular cluster observations like those of $\omega$\,Cen in our initial selection (see Eq.~\ref{eq:basic_cuts}), a follow-up of these Na-enhanced stars should be done in a dedicated study.
+In these panels, which have all measurements for [Mg/Fe], we notice a significant number (\input{depending_text/low_alpha_halo_nafe_0.tex} of stars preliminary selected as part of the low-$\alpha$ halo, but with $\mathrm{[Na/Fe]} > 0$. \citet{Nissen2010} found only 2 of the 38 (5\%) low-$\alpha$ halo stars in their study (G53-41 and G150-40) in this abundance space. Due to our lower precision, our sample also reaches into the super-Solar [Na/Fe] regime. \citet{Nissen2011} suggested that their two Na-enhanced stars could be halo field counterparts of the Na-enhanced globular cluster stars. While we have excluded the dedicated globular cluster observations like those of $\omega$\,Cen in our initial selection (see Eq.~\ref{eq:basic_cuts}), a follow-up of these Na-rich stars should be done in a dedicated study.
 
 \paragraph*{Light odd-Z elements: Na, Al, K:}
 
@@ -345,7 +343,7 @@ We plot the detection rates of the promising elements for low metallicities in F
 Only stars with unflagged measurements for all these elements are shown. Extensive \textsc{corner} plots are provided in the supplementary material.
 }
 
-To get a first impression of possible 2D combinations of the 6 most promising elements, we inspect the \textsc{corner} plot \citep{corner} both in abundance space as well as the difference with respect to the $50^\text{th}$ percentile (a robust representative of the high-$\alpha$ halo stars) in an uncertainty weighted version to identify again significant differences but this time in 2D space\footnote{Among the metal-poor stars, accreted stars stand out most significantly in [Fe/H], [Na/Fe], and [Cu/Fe] with typically more than 3 $\sigma$. [Mg/Fe], [Si/Fe], [Mn/Fe], and [Ni/Fe] show slightly less significant separations around 2 $\sigma$.}. Here, we only show the histograms in Fig.~\ref{fig:hist_high_separation_elements} and provide the corner plots in the supplementary material\footnote{In these 2D-density plots, one can see clear structures of accreted features in the bottom left for all combinations, but least pronounced for combinations of [Si/Fe] and [Ni/Fe].}. Looking at the histograms, we see clear double-peak structures for [Na/Fe] and even resolved for [Cu/Fe]. Asymmetries are visible for [Fe/H], [Mg/Fe], [Mn/Fe], and [Ni/Fe]. [Si/Fe] shows no clear asymmetry in the histogram.
+To get a first impression of possible 2D combinations of the 6 most promising elements, we inspect the \textsc{corner} plot \citep{corner} both in abundance space as well as the difference with respect to the $50^\text{th}$ percentile (a robust representative of the high-$\alpha$ halo stars) in an uncertainty weighted version to identify again significant differences but this time in 2D space\footnote{Among the metal-poor stars, accreted stars stand out most significantly in Fe, Na, and Cu (3 $\sigma$ or more) and less in Mg, Si, Mn, and Ni (around 2 $\sigma$).}. Here, we only show the histograms in Fig.~\ref{fig:hist_high_separation_elements} and provide the corner plots in the supplementary material\footnote{In these 2D-density plots, accreted features are located in the bottom left.}. Looking at the histograms, we see clear double-peak structures for [Na/Fe] and even resolved for [Cu/Fe]. Asymmetries are visible for [Fe/H], [Mg/Fe], [Mn/Fe], and [Ni/Fe]. [Si/Fe] shows no clear asymmetry in the histogram.
 
 For each of the combinations listed in Tab.~\ref{tab:sample_gmm}, we have fitted simple GMMs from \textsc{scikit-learn}'s \textsc{GaussianMixture} between 3 and 30 components. Because of the cut we employed in [Fe/H] as well as the complex, non-Gaussian, structure with respect to [Fe/H], it is not reasonable to include [Fe/H] itself as an input label. We use it, however, later-on as a label to assess the components. To limit high-confidence outliers, we have applied further cuts to the data via limits on the uncertainties ($\texttt{e\_X\_fe} < 0.25\dex$) as well as boundaries for the abundances ($ \mathrm{[Fe/H]} < -0.5 $, $-0.3 < \mathrm{[Mg/Fe]} < 0.7$,$ -0.3 < \mathrm{[Si/Fe]} < 0.7$, $ -0.7 < \mathrm{[Na/Fe]} < 0.7$, $ -0.3 < \mathrm{[Mn/Fe]} < 0.25$, $ -0.7 < \mathrm{[Ni/Fe]} < 0.25$, and $ -0.3 < \mathrm{[Cu/Fe]} < 0.7$) in addition to the basic cuts and abundance flags. We plot the distribution of BICs (normalised to the lowest BIC) in Fig.~\ref{fig:bic_stats}. All combinations are best recovered with simple GMMs with fewer than 10 components.
 
@@ -539,7 +537,7 @@ The aim of our study is to find a way to best select accreted stars in the MW wi
 
 \subsection{Prospects for chemically tagging the accreted halo} \label{sec:prospects_chem_tagg}
 
-Why do we expect in-situ and accreted stars to show different chemical enrichment histories? If we accept the picture that the early Milky Way was assembled bottom-up via hierarchical aggregation of smaller elements and significant amount of accretion events \citep[e.g.][]{Searle1978}, the difference of the chemical evolution of such accreted stars depends significantly on the initial mass function, the mass of the accreted system, and star formation history of each accreted structure. Such differences will, for example, influence at which [Fe/H] we see the typical knee in the [$\alpha$/Fe] vs. [Fe/H] plane, at which SNIa kick in \citep[e.g.][]{Tinsley1979, GilmoreWyse1991, McWilliam1997, Matteucci2021}. The chrono-chemodynamic data of GALAH+ DR3 is so rich that we cannot address all questions here. We explicitly postpone a discussion of the resemblance of the accreted structures with dwarf Spheroidal galaxies to a follow-up, but refer to recent work by \citet{Hayes2018} as well as the review by \citet{Nissen2018}. For this work, we concentrate on the following questions: Which telltale elements have we identified (Sec.~\ref{sec:tell_tale})? How reliable is our selection, that is, is our chemical selection actually selecting the GSE and how contaminated is this selection (Sec.~\ref{sec:reliability_selection}) in combination with the question, how chemically different are accreted stars from in-situ ones?
+Why do we expect in-situ and accreted stars to show different chemical enrichment histories? If we accept the picture that the early Milky Way was assembled bottom-up via hierarchical aggregation of smaller elements and significant amount of accretion events \citep[e.g.][]{Searle1978}, the difference of the chemical evolution of such accreted stars depends significantly on the initial mass function, the mass of the accreted system, and star formation history of each accreted structure. Such differences will, for example, influence at which [Fe/H] we see the typical knee in the [$\alpha$/Fe] vs. [Fe/H] plane, at which SNIa kick in \citep[e.g.][]{Tinsley1979, GilmoreWyse1991, McWilliam1997, Matteucci2021}. The chrono-chemodynamic data of GALAH+ DR3 is so rich that we cannot address all questions here. We explicitly postpone a discussion of the resemblance of the accreted structures with dwarf Spheroidal galaxies to a follow-up, but refer to recent work by \citet{Hayes2018} and \citet{Monty2020} as well as the review by \citet{Nissen2018}. For this work, we concentrate on the following questions: Which telltale elements have we identified (Sec.~\ref{sec:tell_tale})? How reliable is our selection, that is, is our chemical selection actually selecting the GSE and how contaminated is this selection (Sec.~\ref{sec:reliability_selection}) in combination with the question, how chemically different are accreted stars from in-situ ones?
 
 \subsubsection{Telltale elements of accretion based on GALAH+ DR3} \label{sec:tell_tale}
 
@@ -702,14 +700,7 @@ JK and TZ acknowledge financial support of the Slovenian Research Agency (resear
 KCF acknowledges support from the the Australian Research Council under award number DP160103747.
 CK acknowledges funding from the UK Science and Technology Facility Council (STFC) through grant ST/R000905/1 and ST/V000632/1, and the Stromlo Distinguished Visitorship at the ANU.
 YST acknowledges financial support from the Australian Research Council through DECRA Fellowship DE220101520.
-We thank Rohan Naidu for sharing the [Fe/H] values from \citet{Naidu2020}. Hyperlink figures to code access and to recreate figures are inspired by Rodrigo Luger.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Data Availability}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-The data used for this study is published by \citet{Buder2021} and can be accessed publicly via \url{https://docs.datacentral.org.au/galah/dr3/overview/}.
-We provide full tables for Tables~\ref{tab:simple_gmm_selection} and \ref{tab:xdgmm_dynamical_selection} in the supplementary material. All code to reproduce the analysis and figures can be accessed via \url{https://github.com/svenbuder/Accreted-stars-in-GALAH-DR3} and is also marked behind each figure with a link icon to this repository.
+We thank Rohan Naidu for sharing the [Fe/H] values from \citet{Naidu2020}. Hyperlink figures to code access are inspired by Rodrigo Luger.
 
 \section*{Facilities}
 
@@ -732,6 +723,13 @@ The research for this publication was coded in \textsc{python} (version 3.7.4) a
 \textsc{statsmodels} (v. 0.10.1),
 \textsc{xdgmm} (v. 1.1).
 We further made use of \textsc{topcat} \citep[version 4.7;][]{Taylor2005};
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Data Availability}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The data used for this study is published by \citet{Buder2021} and can be accessed publicly via \url{https://docs.datacentral.org.au/galah/dr3/overview/}.
+We provide full tables for Tables~\ref{tab:simple_gmm_selection} and \ref{tab:xdgmm_dynamical_selection} in the supplementary material. All code to reproduce the analysis and figures can be accessed via \url{https://github.com/svenbuder/Accreted-stars-in-GALAH-DR3} and is also marked behind each figure with a link icon to this repository.
 
 %%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
 % The best way to enter references is to use BibTeX:
@@ -763,6 +761,7 @@ $^{18}$Mullard Space Science Laboratory, University College London, Holmbury St.
 $^{19}$Centre for Astrophysics, University of Southern Queensland, Toowoomba, QLD 4350, Australia\\
 $^{20}$Centre for Astrophysics Research, Department of Physics, Astronomy \& Mathematics, University of Hertfordshire, Hatfield, AL10 9AB, UK\\
 $^{21}$Center for Astrophysical Sciences \& Department of Physics \& Astronomy, The Johns Hopkins University, Baltimore, MD 21218
+
 %%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
 
 \appendix
@@ -773,7 +772,9 @@ $^{21}$Center for Astrophysical Sciences \& Department of Physics \& Astronomy, 
 
 \input{tables/selection_techniques} %\label{tab:selection_techniques}
 
-Many selections of major substructures in the halo via spatial, photometric, kinematic, dynamic, and chemical properties (or a combination of those) exist - we list several of them, categorised by the used selection properties in Table~\ref{tab:selection_techniques}. We acknowledge that this list is incomplete and not all studies that used the listed techniques are included. We hope this list is of use for giving the reader an overview of the existing techniques to uncover major merger events in the early history of the Milky Way \citep[see][for a review]{Helmi2020}.
+Many selections of major substructures in the halo via spatial, photometric, kinematic, dynamic, and chemical properties (or a combination of those) exist - we list several of them, categorised by the used selection properties in Table~\ref{tab:selection_techniques}.
+\newpage
+We acknowledge that this list is incomplete and not all studies that used the listed techniques are included. We hope this list is of use for giving the reader an overview of the existing techniques to uncover major merger events in the early history of the Milky Way \citep[see][for a review]{Helmi2020}.
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Supplementary Material}
