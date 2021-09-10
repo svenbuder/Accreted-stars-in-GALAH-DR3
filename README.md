@@ -2,7 +2,7 @@
 
 This repository includes all code to recreate the research presented in the publication  
 **The GALAH Survey: Chemical tagging and chrono-chemodynamics of accreted halo stars with GALAH+ DR3 and *Gaia* eDR3**
-by Sven Buder et al. (2021b), submitted to MNRAS and accessible via [arXiv:2021.09XXX](https://ui.adsabs.harvard.edu/abs/2020arXiv201102505B).
+by Sven Buder et al. (2021b), submitted to MNRAS and accessible via the [arXiv:2109.04059](https://arxiv.org/abs/2109.04059).
 
 ## Abstract
 
